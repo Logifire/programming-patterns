@@ -1,0 +1,14 @@
+{
+    "name": "logifire/programming-patterns",
+    "authors": [
+        {
+            "name": "Logifire",
+            "email": "Logifire@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"Logifire\\ProgrammingPatterns\\": "src/"}
+    }
+}
