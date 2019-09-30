@@ -19,12 +19,14 @@ class StrategyClient
     public function run()
     {
         $guest_discount = new GuestDiscount();
+        // Default strategy
         $shopping_cart = new ShoppingCart($guest_discount);
 
         $price = $shopping_cart->checkout(100);
         echo "Common customer price: {$price}\n"; // $price = 100
 
         $regular_discount = new RegularDiscount();
+        // Set new strategy
         $shopping_cart->setDiscount($regular_discount);
 
         $price = $shopping_cart->checkout(100);

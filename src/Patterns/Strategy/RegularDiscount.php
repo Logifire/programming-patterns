@@ -1,6 +1,9 @@
 <?php
 namespace Logifire\ProgrammingPatterns\Patterns\Strategy;
 
+/**
+ * Strategy
+ */
 class RegularDiscount implements Discount
 {
 

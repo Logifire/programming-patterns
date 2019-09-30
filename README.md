@@ -8,3 +8,4 @@
 * [DesignPatternsPHP](https://designpatternsphp.readthedocs.io/en/latest/README.html)
 * [Design Patterns Game](https://designpatternsgame.com/patterns)
 * Head First Design Patterns by Kathy Sierra, Bert Bates, Elisabeth Robson, Eric Freeman
+* [OODesign](https://www.oodesign.com/)
