@@ -1,5 +1,7 @@
 {
     "name": "logifire/programming-patterns",
+    "description": "Programming patterns",
+    "license": "MIT",
     "authors": [
         {
             "name": "Logifire",
@@ -7,8 +9,12 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php": ">=7.2"
+    },
     "autoload": {
-        "psr-4": {"Logifire\\ProgrammingPatterns\\": "src/"}
+        "psr-4": {
+            "Logifire\\ProgrammingPatterns\\": "src/"
+        }
     }
 }
