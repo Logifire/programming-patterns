@@ -2,7 +2,7 @@
 
 ## References
 
-* Applying UML and patters by Craig Larman
+* Applying UML and patterns by Craig Larman
 * Holub on patterns by Allen Holub
 * Patterns, princibles, and practices of domain driven design by Scott Millett and Nick Tune
 * [DesignPatternsPHP](https://designpatternsphp.readthedocs.io/en/latest/README.html)
