@@ -4,7 +4,7 @@
 
 * Applying UML and patterns by Craig Larman
 * Holub on patterns by Allen Holub
-* Patterns, princibles, and practices of domain driven design by Scott Millett and Nick Tune
+* Patterns, principles, and practices of domain driven design by Scott Millett and Nick Tune
 * [DesignPatternsPHP](https://designpatternsphp.readthedocs.io/en/latest/README.html)
 * [Design Patterns Game](https://designpatternsgame.com/patterns)
 * Head First Design Patterns by Kathy Sierra, Bert Bates, Elisabeth Robson, Eric Freeman

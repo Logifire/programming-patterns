@@ -16,7 +16,7 @@ require $path;
 class StrategyClient
 {
 
-    public function run()
+    public function run(): void
     {
         $guest_discount = new GuestDiscount();
         // Default strategy

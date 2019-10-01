@@ -14,7 +14,7 @@ require $path;
 class ObserverClient
 {
 
-    public function run()
+    public function run(): void
     {
         $news_publisher = new NewsPublisher();
         $sms_subscriber = new SmsSubscriber();
