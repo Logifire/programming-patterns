@@ -14,7 +14,7 @@ class AbstractFactoryClient
     public function buildGui(LookAndFeel $look_and_feel): void
     {
         /*
-         * The classes (concrete products) of the abstract factory are unknown.
+         * The classes of the concrete products from the abstract factory are unknown.
          */
         $text_field = $look_and_feel->createTextField();
 
