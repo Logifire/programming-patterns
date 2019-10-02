@@ -29,6 +29,8 @@ class AbstractFactoryClient
 
     public function run(): void
     {
+        // *** Run program ***
+
         // User wants Windows look
 
         $windows_look = new WindowsLookAndFeel();
@@ -38,6 +40,8 @@ class AbstractFactoryClient
          * Windows Text Field
          * Windows Button
          */
+
+        // *** or ***
 
         // User wants Linux look
 
