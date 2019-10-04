@@ -11,6 +11,6 @@ class Cancelled implements State
 
     public function proceedToNext(Order $order): void
     {
-        echo 'Order cancellled, you cannot verify payment.';
+        echo 'Order cancelled, you cannot verify payment.';
     }
 }
