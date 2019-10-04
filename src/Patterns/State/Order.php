@@ -14,7 +14,7 @@ class Order
 
     public function __construct()
     {
-        $this->state = new PaymentPendingState($this);
+        $this->state = new Unpaid($this);
     }
 
     /**
@@ -25,8 +25,13 @@ class Order
         $this->state = $state;
     }
 
-    public function getState(): State
+    public function proceedToNext(): void
     {
-        return $this->state;
+        $this->state->proceedToNext($this);
+    }
+
+    public function cancel(): void
+    {
+        $this->state->cancelOrder($this);
     }
 }

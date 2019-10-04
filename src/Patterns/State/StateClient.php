@@ -24,12 +24,12 @@ class StateClient
 
         // Context
         $order = new Order();
-        
+
         echo
-        "{$order->getState()->payOrder()} \n",
-        "{$order->getState()->payOrder()} \n",
-        "{$order->getState()->shipOrder()} \n",
-        "{$order->getState()->cancelOrder()} \n";
+        "{$order->proceedToNext()} \n", // Payment verified. Shipping soon.
+        "{$order->proceedToNext()} \n", // Shipping your order now.
+        "{$order->proceedToNext()} \n", // Already shipped... 
+        "{$order->cancel()} \n"; // You cannot cancel, already shipped...
     }
 }
 
