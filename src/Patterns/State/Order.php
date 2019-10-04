@@ -1,6 +1,9 @@
 <?php
 namespace Logifire\ProgrammingPatterns\Patterns\State;
 
+/**
+ * Context
+ */
 class Order
 {
 

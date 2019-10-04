@@ -1,6 +1,9 @@
 <?php
 namespace Logifire\ProgrammingPatterns\Patterns\State;
 
+/**
+ * Initialized state
+ */
 class PaymentPendingState implements State
 {
 
@@ -23,11 +26,11 @@ class PaymentPendingState implements State
         $this->order->setState($cancel_order_state);
     }
 
-    public function verifyPayment(): void
+    public function payOrder(): void
     {
         echo 'Payment verified. Shipping soon.';
 
-        $order_being_prepared = new OrderBeingPreparedState($this->order);
+        $order_being_prepared = new OrderPaidState($this->order);
         $this->order->setState($order_being_prepared);
     }
 

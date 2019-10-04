@@ -21,13 +21,15 @@ class StateClient
 
     public function run(): void
     {
-        
+
+        // Context
         $order = new Order();
-        $order->getState()->verifyPayment();
-        $order->getState()->verifyPayment();
-        $order->getState()->shipOrder();
         
-        echo get_class($order->getState());
+        echo
+        "{$order->getState()->payOrder()} \n",
+        "{$order->getState()->payOrder()} \n",
+        "{$order->getState()->shipOrder()} \n",
+        "{$order->getState()->cancelOrder()} \n";
     }
 }
 

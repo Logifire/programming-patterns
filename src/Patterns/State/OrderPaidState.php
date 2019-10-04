@@ -1,7 +1,7 @@
 <?php
 namespace Logifire\ProgrammingPatterns\Patterns\State;
 
-class OrderBeingPreparedState implements State
+class OrderPaidState implements State
 {
 
     /**
@@ -23,7 +23,7 @@ class OrderBeingPreparedState implements State
         $this->order->setState($cancel_order_state);
     }
 
-    public function verifyPayment(): void
+    public function payOrder(): void
     {
         echo 'Already verified your payment.';
     }

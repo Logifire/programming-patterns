@@ -20,7 +20,7 @@ class OrderShippedState implements State
         echo 'You cannot cancel, already shipped...';
     }
 
-    public function verifyPayment(): void
+    public function payOrder(): void
     {
         echo 'You cannot verify payment, already shipped...';
     }

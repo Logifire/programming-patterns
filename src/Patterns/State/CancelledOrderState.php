@@ -25,7 +25,7 @@ class CancelledOrderState implements State
         echo 'Order cannot ship, it was cancelled.';
     }
 
-    public function verifyPayment(): void
+    public function payOrder(): void
     {
         echo 'Order cancellled, you cannot verify payment.';
     }

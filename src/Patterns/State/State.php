@@ -6,7 +6,7 @@ interface State
 
     public function cancelOrder(): void;
 
-    public function verifyPayment(): void;
+    public function payOrder(): void;
 
     public function shipOrder(): void;
 }
