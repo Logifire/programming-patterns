@@ -25,13 +25,13 @@ class Order
         $this->state = $state;
     }
 
-    public function proceedToNext(): void
+    public function proceedToNext(): string
     {
-        $this->state->proceedToNext($this);
+        return $this->state->proceedToNext($this);
     }
 
-    public function cancel(): void
+    public function cancel(): string
     {
-        $this->state->cancelOrder($this);
+        return $this->state->cancelOrder($this);
     }
 }

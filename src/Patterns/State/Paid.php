@@ -4,17 +4,18 @@ namespace Logifire\ProgrammingPatterns\Patterns\State;
 class Paid implements State
 {
 
-    public function cancelOrder(Order $order): void
+    public function cancelOrder(Order $order): string
     {
-        echo 'Cancelling your order...';
 
-        $cancel_order_state = new Cancelled();
-        $order->setState($cancel_order_state);
+        $order->setState(new Cancelled());
+
+        return 'Cancelling your order...';
     }
 
-    public function proceedToNext(Order $order): void
+    public function proceedToNext(Order $order): string
     {
-        echo 'Shipping your order now.';
         $order->setState(new Shipped());
+
+        return 'Shipping your order now.';
     }
 }

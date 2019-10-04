@@ -4,13 +4,13 @@ namespace Logifire\ProgrammingPatterns\Patterns\State;
 class Cancelled implements State
 {
 
-    public function cancelOrder(Order $order): void
+    public function cancelOrder(Order $order): string
     {
-        echo 'Your order has already been cancelled.';
+        return 'Your order has already been cancelled.';
     }
 
-    public function proceedToNext(Order $order): void
+    public function proceedToNext(Order $order): string
     {
-        echo 'Order cancelled, you cannot verify payment.';
+        return 'Order cancelled, you cannot verify payment.';
     }
 }

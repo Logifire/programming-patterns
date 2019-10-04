@@ -7,19 +7,17 @@ namespace Logifire\ProgrammingPatterns\Patterns\State;
 class Unpaid implements State
 {
 
-    public function cancelOrder(Order $order): void
+    public function cancelOrder(Order $order): string
     {
-        echo 'Cancelling your unpaid order...';
+        $order->setState(new Cancelled());
 
-        $cancel_order_state = new Cancelled();
-        $order->setState($cancel_order_state);
+        return 'Cancelling your unpaid order...';
     }
 
-    public function proceedToNext(Order $order): void
+    public function proceedToNext(Order $order): string
     {
-        echo 'Payment verified. Shipping soon.';
+        $order->setState(new Paid());
 
-        $order_being_prepared = new Paid();
-        $order->setState($order_being_prepared);
+        return 'Payment verified. Shipping soon.';
     }
 }
