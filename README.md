@@ -9,6 +9,7 @@ Remember, principles are not mandatory rules but guidelines.
 Fail fast. <br>
 Do validation as early as possible.
 
+One return statement <br>
 Only one return statement per function, multiple returns may be overlooked.
 
 Less is more. <br>
