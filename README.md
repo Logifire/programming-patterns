@@ -1,5 +1,22 @@
 # Examples of patterns
 
+Please take a look at the `Client` class for each pattern to see how it is used.
+
+## Principles
+
+Remember, principles are not mandatory rules but guidelines.
+
+Fail fast. <br>
+Do validation as early as possible.
+
+Only one return statement per function, multiple returns may be overlooked.
+
+Less is more. <br>
+Remember to be explicit -  Don't confuse it with shortened code which is not necessarily more readable.
+
+Just in time. <br>
+Start small and transparent. Use patterns when requirements change, to make it more maintainable. You don't have to begin with a pattern.
+
 ## References
 
 * Applying UML and patterns by Craig Larman
@@ -11,3 +28,4 @@
 * [OODesign](https://www.oodesign.com/)
 * [Wikipedia - Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
 * [Refactoring.Guru](https://refactoring.guru/design-patterns)
+
