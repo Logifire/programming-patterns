@@ -16,8 +16,8 @@ class BridgeClient
 
     public function run(): void
     {
-        $tv = new Tv();
-        $advanced_remote = new AdvancedRemote($tv);
+        $tv = new Tv(); // Subsystem-specific implementation of the Implementor
+        $advanced_remote = new AdvancedRemote($tv); // Customized Abstraction for a particular application
         $advanced_remote->togglePower();
         $advanced_remote->mute();
     }
