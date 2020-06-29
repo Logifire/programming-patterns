@@ -1,15 +1,15 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Adapter;
+namespace Logifire\ProgrammingPatterns\Adapter;
 
 class MicroUsbCharger
 {
 
     /**
-     * @var MicroUsbPhone
+     * @var MicroUsbPhoneInterface
      */
     private $phone;
 
-    public function __construct(MicroUsbPhone $phone)
+    public function __construct(MicroUsbPhoneInterface $phone)
     {
 
         $this->phone = $phone;

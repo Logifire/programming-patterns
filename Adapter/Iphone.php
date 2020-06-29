@@ -1,10 +1,10 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Adapter;
+namespace Logifire\ProgrammingPatterns\Adapter;
 
 /**
- * Adaptee
+ * Adaptee - object that doesen't support the desired interface
  */
-class Iphone implements LightningPhone
+class Iphone implements LightningPhoneInterface
 {
 
     public function useLightning(): string

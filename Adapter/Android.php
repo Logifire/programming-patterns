@@ -1,7 +1,7 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Adapter;
+namespace Logifire\ProgrammingPatterns\Adapter;
 
-class Android implements MicroUsbPhone
+class Android implements MicroUsbPhoneInterface
 {
 
     public function useMicroUsb(): string

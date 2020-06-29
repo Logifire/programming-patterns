@@ -1,18 +1,18 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Adapter;
+namespace Logifire\ProgrammingPatterns\Adapter;
 
 /**
  * Adapter
  */
-class LightningToMicroUsbAdapter implements MicroUsbPhone
+class LightningToMicroUsbAdapter implements MicroUsbPhoneInterface
 {
 
     /**
-     * @var LightningPhone
+     * @var LightningPhoneInterface
      */
     private $phone;
 
-    public function __construct(LightningPhone $phone)
+    public function __construct(LightningPhoneInterface $phone)
     {
 
         $this->phone = $phone;

@@ -1,7 +1,7 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Adapter;
+namespace Logifire\ProgrammingPatterns\Adapter;
 
-$path = __DIR__ . '/../../../vendor/autoload.php';
+$path = realpath('../vendor/autoload.php');
 
 require $path;
 
@@ -11,7 +11,7 @@ require $path;
  * Convert the interface of a class into another interface clients expect. 
  * Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
  */
-class AdapterClient
+class Client
 {
 
     public function run(): void
@@ -23,4 +23,4 @@ class AdapterClient
     }
 }
 
-(new AdapterClient())->run();
+(new Client())->run();
