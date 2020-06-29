@@ -1,7 +1,7 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Strategy;
+namespace Logifire\ProgrammingPatterns\Strategy;
 
-$path = __DIR__ . '/../../../vendor/autoload.php';
+$path = realpath('../vendor/autoload.php');
 
 require $path;
 
@@ -13,7 +13,7 @@ require $path;
  * Use when:
  * …you have many classes that differ in their behaviour. Strategies allow to configure a class with one of many behaviours.
  */
-class StrategyClient
+class Client
 {
 
     public function run(): void
@@ -34,4 +34,4 @@ class StrategyClient
     }
 }
 
-(new StrategyClient())->run();
+(new Client())->run();

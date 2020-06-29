@@ -1,10 +1,10 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Strategy;
+namespace Logifire\ProgrammingPatterns\Strategy;
 
 /**
  * Strategy
  */
-class PremiumDiscount implements Discount
+class PremiumDiscount implements DiscountInterface
 {
 
     public function calculate(float $price): float
