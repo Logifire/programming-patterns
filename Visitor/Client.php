@@ -1,7 +1,7 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Visitor;
+namespace Logifire\ProgrammingPatterns\Visitor;
 
-$path = __DIR__ . '/../../../vendor/autoload.php';
+$path = realpath('../vendor/autoload.php');
 
 require $path;
 
@@ -11,8 +11,10 @@ require $path;
  * Visitors can collect information or perform operations on all the elements of some aggregation.
  * 
  * A Visitor is, in a way, a "visiting strategy".
+ *
+ * Visitors can accumulate state as the visit elements.
  */
-class VisitorClient
+class Client
 {
 
     public function run(): void
@@ -33,4 +35,4 @@ class VisitorClient
     }
 }
 
-(new VisitorClient())->run();
+(new Client())->run();

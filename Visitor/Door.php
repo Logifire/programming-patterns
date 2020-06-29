@@ -1,10 +1,10 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Visitor;
+namespace Logifire\ProgrammingPatterns\Visitor;
 
-class Door implements CarElement
+class Door implements CarElementInterface
 {
 
-    public function accept(CarElementVisitor $visitor): void
+    public function accept(CarElementVisitorInterface $visitor): void
     {
         $visitor->visitDoor($this);
     }

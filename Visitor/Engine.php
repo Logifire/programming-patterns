@@ -1,10 +1,10 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Visitor;
+namespace Logifire\ProgrammingPatterns\Visitor;
 
-class Engine implements CarElement
+class Engine implements CarElementInterface
 {
     
-    public function accept(CarElementVisitor $visitor): void
+    public function accept(CarElementVisitorInterface $visitor): void
     {
         $visitor->visitEngine($this);
     }

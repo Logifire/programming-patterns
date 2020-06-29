@@ -1,11 +1,14 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Visitor;
+namespace Logifire\ProgrammingPatterns\Visitor;
 
+/**
+ * A composite object that can enumerate its elements
+ */
 class Car
 {
 
     /**
-     * @var CarElement[]
+     * @var CarElementInterface[]
      */
     private $elements = [];
 
@@ -14,7 +17,7 @@ class Car
         $this->elements = [$door, $engine];
     }
 
-    public function accept(CarElementVisitor $visitor): void
+    public function accept(CarElementVisitorInterface $visitor): void
     {
         foreach ($this->elements as $element) {
             $element->accept($visitor);
