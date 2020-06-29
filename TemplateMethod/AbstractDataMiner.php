@@ -1,7 +1,8 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\TemplateMethod;
 
-abstract class DataMiner
+namespace Logifire\ProgrammingPatterns\TemplateMethod;
+
+abstract class AbstractDataMiner
 {
 
     public function mine(string $path): string
@@ -11,7 +12,7 @@ abstract class DataMiner
 
         // Call template method for data specific operations
         $result = $this->analyzeData($data);
-        
+
         return $result;
     }
 
