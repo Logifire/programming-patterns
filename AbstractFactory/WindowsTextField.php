@@ -1,7 +1,7 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\AbstractFactory;
+namespace Logifire\ProgrammingPatterns\AbstractFactory;
 
-class WindowsTextField implements TextField
+class WindowsTextField implements TextFieldInterface
 {
 
     public function getContent(): string

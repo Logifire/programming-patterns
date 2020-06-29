@@ -1,7 +1,7 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\AbstractFactory;
+namespace Logifire\ProgrammingPatterns\AbstractFactory;
 
-class LinuxButton implements Button
+class LinuxButton implements ButtonInterface
 {
     
     public function getValue(): string

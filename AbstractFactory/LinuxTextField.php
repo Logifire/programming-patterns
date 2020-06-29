@@ -1,7 +1,7 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\AbstractFactory;
+namespace Logifire\ProgrammingPatterns\AbstractFactory;
 
-class LinuxTextField implements TextField
+class LinuxTextField implements TextFieldInterface
 {
 
     public function getContent(): string

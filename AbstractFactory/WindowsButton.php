@@ -1,7 +1,7 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\AbstractFactory;
+namespace Logifire\ProgrammingPatterns\AbstractFactory;
 
-class WindowsButton implements Button
+class WindowsButton implements ButtonInterface
 {
 
     public function getValue(): string
