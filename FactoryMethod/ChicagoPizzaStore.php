@@ -1,13 +1,13 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\FactoryMethod;
+namespace Logifire\ProgrammingPatterns\FactoryMethod;
 
 /**
  * Concrete creator
  */
-class ChicagoPizzaStore extends PizzaStore
+class ChicagoPizzaStore extends AbstractPizzaStore
 {
     
-    protected function createPizza(): Pizza
+    protected function createPizza(): PizzaInterface
     {
         return new ChicagoCheesePizza();
     }

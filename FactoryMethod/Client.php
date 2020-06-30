@@ -1,7 +1,7 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\FactoryMethod;
+namespace Logifire\ProgrammingPatterns\FactoryMethod;
 
-$path = __DIR__ . '/../../../vendor/autoload.php';
+$path = realpath('../vendor/autoload.php');
 
 require $path;
 
@@ -13,7 +13,7 @@ require $path;
  * This pattern is useful when you can do most of the work in the superclass level (creator) 
  * but want to put off deciding exactly which sort of object you'll be working on until runtime.
  */
-class FactoryMethodClient
+class Client
 {
 
     public function run(): void
@@ -34,4 +34,4 @@ class FactoryMethodClient
     }
 }
 
-(new FactoryMethodClient())->run();
+(new Client())->run();
