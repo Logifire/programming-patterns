@@ -18,14 +18,14 @@ class Client
 
     public function run(): void
     {
-        $guest_discount = new GuestDiscount();
+        $guest_discount = new NoDiscountStrategy();
         // Default strategy
         $shopping_cart = new ShoppingCart($guest_discount);
 
         $price = $shopping_cart->checkout(100);
         echo "Common customer price: {$price}\n"; // $price = 100
 
-        $regular_discount = new RegularDiscount();
+        $regular_discount = new RegularDiscountStrategy();
         // Set new strategy
         $shopping_cart->setDiscount($regular_discount);
 

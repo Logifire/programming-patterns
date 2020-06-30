@@ -1,20 +1,23 @@
 <?php
 namespace Logifire\ProgrammingPatterns\Strategy;
 
+/**
+ * Context
+ */
 class ShoppingCart
 {
 
     /**
-     * @var DiscountInterface
+     * @var DiscountStrategyInterface
      */
     private $discount;
 
-    public function __construct(DiscountInterface $default_strategy)
+    public function __construct(DiscountStrategyInterface $default_strategy)
     {
         $this->discount = $default_strategy;
     }
 
-    public function setDiscount(DiscountInterface $strategy): void
+    public function setDiscount(DiscountStrategyInterface $strategy): void
     {
         $this->discount = $strategy;
     }

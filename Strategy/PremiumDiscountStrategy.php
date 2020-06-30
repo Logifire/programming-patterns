@@ -4,7 +4,7 @@ namespace Logifire\ProgrammingPatterns\Strategy;
 /**
  * Strategy
  */
-class PremiumDiscount implements DiscountInterface
+class PremiumDiscountStrategy implements DiscountStrategyInterface
 {
 
     public function calculate(float $price): float
