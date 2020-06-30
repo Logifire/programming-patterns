@@ -18,9 +18,9 @@ class Client
 
     public function run(): void
     {
-        $guest_discount = new NoDiscountStrategy();
+        $no_discount = new NoDiscountStrategy();
         // Default strategy
-        $shopping_cart = new ShoppingCart($guest_discount);
+        $shopping_cart = new ShoppingCart($no_discount);
 
         $price = $shopping_cart->checkout(100);
         echo "Common customer price: {$price}\n"; // $price = 100
