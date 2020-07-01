@@ -1,10 +1,10 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Observer;
+namespace Logifire\ProgrammingPatterns\Observer;
 
 /**
  * Observer
  */
-class EmailSubscriber implements Subscriber
+class EmailSubscriberObserver implements SubscriberInterface
 {
    
     public function update(NewsPublisher $news_publisher): void

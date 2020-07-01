@@ -1,5 +1,5 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Observer;
+namespace Logifire\ProgrammingPatterns\Observer;
 
 /**
  * Publisher
@@ -8,7 +8,7 @@ class NewsPublisher
 {
 
     /**
-     * @var Subscriber[] 
+     * @var SubscriberInterface[] 
      */
     private $subscribers = [];
 
@@ -17,13 +17,13 @@ class NewsPublisher
      */
     private $latest_news = '';
 
-    public function attach(Subscriber $subscriber): void
+    public function attach(SubscriberInterface $subscriber): void
     {
         $object_hash = spl_object_hash($subscriber);
         $this->subscribers[$object_hash] = $subscriber;
     }
 
-    public function detach(Subscriber $subscriber): void
+    public function detach(SubscriberInterface $subscriber): void
     {
         $object_hash = spl_object_hash($subscriber);
         unset($this->subscribers[$object_hash]);

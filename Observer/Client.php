@@ -1,7 +1,7 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Observer;
+namespace Logifire\ProgrammingPatterns\Observer;
 
-$path = __DIR__ . '/../../../vendor/autoload.php';
+$path = realpath('../vendor/autoload.php');
 
 require $path;
 
@@ -11,14 +11,14 @@ require $path;
  * The notifying object (publisher) sends an event (publication) to all its observers (subscribers).
  * The publisher wants to maintain low coupling to the subscribers.
  */
-class ObserverClient
+class Client
 {
 
     public function run(): void
     {
         $news_publisher = new NewsPublisher();
-        $sms_subscriber = new SmsSubscriber();
-        $email_subscriber = new EmailSubscriber();
+        $sms_subscriber = new SmsSubscriberObserver();
+        $email_subscriber = new EmailSubscriberObserver();
 
         $news_publisher->attach($sms_subscriber);
         $news_publisher->attach($email_subscriber);
@@ -42,4 +42,4 @@ class ObserverClient
     }
 }
 
-(new ObserverClient())->run();
+(new Client())->run();
