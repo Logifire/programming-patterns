@@ -1,5 +1,5 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\State;
+namespace Logifire\ProgrammingPatterns\State;
 
 /**
  * Context
@@ -8,19 +8,19 @@ class Order
 {
 
     /**
-     * @var State
+     * @var StateInterface
      */
     private $state;
 
     public function __construct()
     {
-        $this->state = new Unpaid($this);
+        $this->state = new UnpaidState($this);
     }
 
     /**
      * @intenal
      */
-    public function setState(State $state): void
+    public function setState(StateInterface $state): void
     {
         $this->state = $state;
     }

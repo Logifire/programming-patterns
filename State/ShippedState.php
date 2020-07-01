@@ -1,7 +1,7 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\State;
+namespace Logifire\ProgrammingPatterns\State;
 
-class Shipped implements State
+class ShippedState implements StateInterface
 {
 
     public function cancelOrder(Order $order): string

@@ -1,20 +1,20 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\State;
+namespace Logifire\ProgrammingPatterns\State;
 
-class Paid implements State
+class PaidState implements StateInterface
 {
 
     public function cancelOrder(Order $order): string
     {
 
-        $order->setState(new Cancelled());
+        $order->setState(new CancelledState());
 
         return 'Cancelling your order...';
     }
 
     public function proceedToNext(Order $order): string
     {
-        $order->setState(new Shipped());
+        $order->setState(new ShippedState());
 
         return 'Shipping your order now.';
     }

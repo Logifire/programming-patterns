@@ -1,4 +1,5 @@
 <?php
+
 namespace Logifire\ProgrammingPatterns\Strategy;
 
 $path = realpath('../vendor/autoload.php');
@@ -18,7 +19,7 @@ class Client
 
     public function run(): void
     {
-        $no_discount = new NoDiscountStrategy();
+        $no_discount   = new NoDiscountStrategy();
         // Default strategy
         $shopping_cart = new ShoppingCart($no_discount);
 
@@ -33,5 +34,4 @@ class Client
         echo "Regular customer price: {$price}"; // $price = 90
     }
 }
-
 (new Client())->run();

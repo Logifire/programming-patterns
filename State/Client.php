@@ -1,7 +1,8 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\State;
 
-$path = __DIR__ . '/../../../vendor/autoload.php';
+namespace Logifire\ProgrammingPatterns\State;
+
+$path = realpath('../vendor/autoload.php');
 
 require $path;
 
@@ -16,7 +17,7 @@ require $path;
  * The state objects do implement a strategy for implementing a single state, but
  * the strategy is not provided by an outside entity.
  */
-class StateClient
+class Client
 {
 
     public function run(): void
@@ -32,5 +33,4 @@ class StateClient
         "{$order->cancel()} \n"; // You cannot cancel, already shipped...
     }
 }
-
-(new StateClient())->run();
+(new Client())->run();
