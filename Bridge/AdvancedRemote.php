@@ -1,5 +1,5 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Bridge;
+namespace Logifire\ProgrammingPatterns\Bridge;
 
 /**
  * Refined Abstraction
@@ -8,7 +8,7 @@ namespace Logifire\ProgrammingPatterns\Patterns\Bridge;
  * 
  * A version of the Abstraction, customized for a particular application.
  */
-class AdvancedRemote extends Remote
+class AdvancedRemote extends AbstractRemote
 {
 
     public function mute(): void

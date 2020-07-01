@@ -1,10 +1,10 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Bridge;
+namespace Logifire\ProgrammingPatterns\Bridge;
 
 /**
  * Refined Abstraction
  */
-class BasicRemote extends Remote
+class BasicRemote extends AbstractRemote
 {
     
 }

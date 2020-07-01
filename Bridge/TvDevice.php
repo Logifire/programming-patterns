@@ -1,10 +1,10 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Bridge;
+namespace Logifire\ProgrammingPatterns\Bridge;
 
 /**
  * Concrete Implementor
  */
-class Tv implements Device
+class TvDevice implements DeviceInterface
 {
 
     /**

@@ -1,7 +1,7 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Bridge;
+namespace Logifire\ProgrammingPatterns\Bridge;
 
-$path = __DIR__ . '/../../../vendor/autoload.php';
+$path = realpath('../vendor/autoload.php');
 
 require $path;
 
@@ -11,16 +11,16 @@ require $path;
  * To decouple subsystems. The two sides of the Bridge (Abstraction and Implementor) can change independently.
  * 
  */
-class BridgeClient
+class Client
 {
 
     public function run(): void
     {
-        $tv = new Tv(); // Subsystem-specific implementation of the Implementor
+        $tv = new TvDevice(); // Subsystem-specific implementation of the Implementor
         $advanced_remote = new AdvancedRemote($tv); // Customized Abstraction for a particular application
         $advanced_remote->togglePower();
         $advanced_remote->mute();
     }
 }
 
-(new BridgeClient())->run();
+(new Client())->run();

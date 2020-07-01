@@ -1,10 +1,10 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Bridge;
+namespace Logifire\ProgrammingPatterns\Bridge;
 
 /**
  * Concrete Implementor
  */
-class Radio implements Device
+class RadioDevice implements DeviceInterface
 {
 
     /**
@@ -19,7 +19,7 @@ class Radio implements Device
 
     public function isTurnedOn(): bool
     {
-        $this->status = true;
+        return $this->status;
     }
 
     public function setVolume(int $percent): void

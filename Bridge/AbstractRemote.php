@@ -1,5 +1,5 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Bridge;
+namespace Logifire\ProgrammingPatterns\Bridge;
 
 /**
  * Abstraction
@@ -7,15 +7,15 @@ namespace Logifire\ProgrammingPatterns\Patterns\Bridge;
  * Implementations of this may have different signatures/structures.
  * 
  */
-abstract class Remote
+abstract class AbstractRemote
 {
 
     /**
-     * @var Device
+     * @var DeviceInterface
      */
     protected $device;
 
-    public function __construct(Device $device)
+    public function __construct(DeviceInterface $device)
     {
 
         $this->device = $device;

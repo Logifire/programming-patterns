@@ -1,5 +1,5 @@
 <?php
-namespace Logifire\ProgrammingPatterns\Patterns\Bridge;
+namespace Logifire\ProgrammingPatterns\Bridge;
 
 /**
  * Implementor
@@ -8,7 +8,7 @@ namespace Logifire\ProgrammingPatterns\Patterns\Bridge;
  * 
  * An interface used by the Abstraction to talk to a subsystem-specific implementation.
  */
-interface Device
+interface DeviceInterface
 {
 
     public function isTurnedOn(): bool;
