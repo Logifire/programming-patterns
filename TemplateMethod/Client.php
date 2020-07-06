@@ -2,9 +2,9 @@
 
 namespace Logifire\ProgrammingPatterns\TemplateMethod;
 
-$path = realpath('../vendor/autoload.php');
+$autoload_path = realpath('../vendor/autoload.php');
 
-require $path;
+require $autoload_path;
 
 /**
  * Quote:
@@ -17,12 +17,12 @@ class Client
 
     public function run(): void
     {
-        $path      = 'path-to-file';
+        $file_path      = 'path-to-file';
         $csv_miner = new CsvMiner();
-        echo $csv_miner->mine($path); // Outputs: Analyzed CSV data...
+        echo $csv_miner->mine($file_path); // Outputs: Analyzed CSV data...
 
         $json_miner = new JsonMiner();
-        echo $json_miner->mine($path); // Outputs: Analyzed JSON data...
+        echo $json_miner->mine($file_path); // Outputs: Analyzed JSON data...
     }
 }
 (new Client())->run();

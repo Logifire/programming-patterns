@@ -1,9 +1,9 @@
 <?php
 namespace Logifire\ProgrammingPatterns\Adapter;
 
-$path = realpath('../vendor/autoload.php');
+$autoload_path = realpath('../vendor/autoload.php');
 
-require $path;
+require $autoload_path;
 
 /**
  * Quotes:
