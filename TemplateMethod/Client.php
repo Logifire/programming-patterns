@@ -9,7 +9,7 @@ require $autoload_path;
 /**
  * Quote:
  *
- * The framework provides a set of superclasses that do 90 percent og the work, deferring application
+ * The framework provides a set of superclasses that do 90 percent of the work, deferring application
  * specific operations to abstract methods.
  */
 class Client
