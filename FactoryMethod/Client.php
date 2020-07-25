@@ -12,6 +12,8 @@ require $autoload_path;
  * 
  * This pattern is useful when you can do most of the work in the superclass level (creator) 
  * but want to put off deciding exactly which sort of object you'll be working on until runtime.
+ * 
+ * @see AbstractPizzaStore::createPizza()
  */
 class Client
 {
