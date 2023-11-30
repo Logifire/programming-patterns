@@ -19,7 +19,7 @@ class Client
         $phone = new Iphone();
         $adapter = new LightningToMicroUsbAdapter($phone);
         $charger = new MicroUsbCharger($adapter);
-        echo $charger->charge(); // Outputs: Iphone is charing
+        echo $charger->charge(); // Outputs: Iphone is charging
     }
 }
 

@@ -9,6 +9,6 @@ class Iphone implements LightningPhoneInterface
 
     public function useLightning(): string
     {
-        return 'Iphone is charing';
+        return 'Iphone is charging';
     }
 }
