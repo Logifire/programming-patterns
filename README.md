@@ -27,8 +27,7 @@ example both constructor injection and setter injection is used in the shopping 
 
 Patterns are somehow a result of applying principles when you design software.
 The [SOLID principles](https://en.wikipedia.org/wiki/SOLID) are important in addition to the principles below. Remember,
-principles and patterns are not mandatory rules but guidelines. Remember, principles are not mandatory rules but
-guidelines.
+principles and patterns are not mandatory rules but guidelines. 
 
 ### Fail fast
 
@@ -47,6 +46,8 @@ Remember to be explicit - Do not confuse _less is more_ with shortened code whic
 Start small and transparent. Use patterns when requirements changes, to make it more maintainable. You do not have to
 begin with a pattern.
 
-### [Using camelCase for abbreviations](https://medium.com/fantageek/using-camelcase-for-abbreviations-232eb67d872) and combined acronyms
+### Naming abbreviations
+
+[Use camelCase for abbreviations and combined acronyms](https://medium.com/fantageek/using-camelcase-for-abbreviations-232eb67d872)
 
 Example: prefer XmlHttpRequest over XMLHTTPRequest.
